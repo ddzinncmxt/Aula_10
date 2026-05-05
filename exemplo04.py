@@ -10,8 +10,9 @@ try:
         print('o valor precisa ser numerico.')
     except ZeroDivisionError:
         print('Funcionario não poder ser zero.')
+    except KeyboardInterrupt:
+        print('operação')
     else:
         print(f'Média por funcionarios: {mpfuncionario:.2f}')
     finally:
         print('programa encerrado')
-        
